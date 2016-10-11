@@ -33,6 +33,8 @@ public class MainActivity extends AppCompatActivity {
         items.add(new Item(R.drawable.a, "미키마우스"));
         items.add(new Item(R.drawable.a, "미ㅁㅁㅁ키마우스"));
         items.add(new Item(R.drawable.a, "미키마ㅇㅇ우스"));
+        items.add(new Item(R.drawable.a, "미키마ㅇㅇ우스"));
+        items.add(new Item(R.drawable.a, "미키마ㅇㅇ우스"));
 
         rLayoutManager = new LinearLayoutManager(this);
         rView.setLayoutManager(rLayoutManager);
