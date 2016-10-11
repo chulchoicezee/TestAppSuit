@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    tools:context="com.chulgee.calendar.MainActivity">
+
+    <TextView
+        android:text="2011년 몇월"
+        android:textSize="20sp"
+        android:id="@+id/gv_calendar_activity_tv_title"
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:textColor="#000"
+        android:textStyle="bold"/>
+    <GridView
+        android:id="@+id/gv_calendar_activity_gv_calendar"
+        android:layout_width="320dp"
+        android:layout_height="320dp"
+        android:layout_marginTop="30dp"
+        android:numColumns="7"
+        android:stretchMode="columnWidth"
+        />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="horizontal"
+        android:gravity="center">
+        <Button
+            android:id="@+id/gv_calendar_activity_b_last"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="지난달"  />
+        <Button
+            android:id="@+id/gv_calendar_activity_b_next"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="다음달"  />
+
+    </LinearLayout>
+</LinearLayout>
