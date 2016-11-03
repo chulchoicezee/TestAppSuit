@@ -7,7 +7,7 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.chulgee.testappsuit.ui.SubActivity">
+    tools:context="com.chulgee.loadingimage.ui.SubActivity">
 
     <ImageView
         android:id="@+id/sub_iv1"

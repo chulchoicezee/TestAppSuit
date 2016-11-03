@@ -1,4 +1,4 @@
-package com.chulgee.testappsuit.ui;
+package com.chulgee.loadingimage.ui;
 
 import android.content.Intent;
 import android.graphics.Bitmap;
@@ -7,7 +7,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.ImageView;
 
-import com.chulgee.testappsuit.R;
+import com.chulgee.loadingimage.R;
 
 import java.io.File;
 import java.io.FileInputStream;

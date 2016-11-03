@@ -12,14 +12,30 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import java.util.ArrayList;
+import java.util.LinkedHashMap;
 import java.util.List;
+import java.util.Map;
 
 public class MainActivity extends AppCompatActivity {
 
     RecyclerView rView;
     RecyclerView.Adapter rAdapter;
     RecyclerView.LayoutManager rLayoutManager;
+    int CACHE_SIZE = 10;
+    Map<String, Object> cache = new LinkedHashMap<String, Object>(){
+        @Override
+        protected boolean removeEldestEntry(Entry<String, Object> eldest) {
+            return size() > CACHE_SIZE;
+        }
+    };
 
+    public void add(String key, Object o){
+        cache.put(key, o);
+    }
+
+    public Object get(String key){
+        return cache.get(key);
+    }
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
